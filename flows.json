@@ -1,2 +1,74 @@
-[{"id":"7493e9ee.4b09e8","type":"comment","z":"7815539e.9ef41c", "name":"Node-Red y
-Git","info":"","x":360,"y":100,"wires":[]}]
+[
+    {
+        "id": "1a9cf09d9a0f2393",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "508298a95699f793",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7d238846745374bb",
+        "type": "comment",
+        "z": "1a9cf09d9a0f2393",
+        "name": "Node Red-Git",
+        "info": "",
+        "x": 490,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "656c9c6cd7387ac1",
+        "type": "inject",
+        "z": "1a9cf09d9a0f2393",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 340,
+        "y": 260,
+        "wires": [
+            [
+                "a4f8dd19a18b7ddf"
+            ]
+        ]
+    },
+    {
+        "id": "a4f8dd19a18b7ddf",
+        "type": "debug",
+        "z": "1a9cf09d9a0f2393",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 260,
+        "wires": []
+    }
+]
